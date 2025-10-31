@@ -547,7 +547,7 @@
     <footer>
       <p>
         © <span id="copyright-year"></span> 科學好好聽｜以
-        <a href="https://script.google.com/macros/s/AKfycbz-bKmW0_TCyWnOjonbX8JjLkrLXop76e9mfHol-XDvwoT931GVXMW9-mzS6xMF7RIe/exec" target="_blank" rel="noreferrer">SoundOn RSS</a>
+        <a href="https://script.google.com/macros/s/AKfycbzJM_l5m59-avur_Zlu2yhizMytRzstOuBgMF9tni1JjXEINgx6N7OsA7FTw429S7A/exec" target="_blank" rel="noreferrer">SoundOn RSS</a>
         即時更新
       </p>
     </footer>
@@ -561,12 +561,11 @@
       const loadingEl = document.getElementById('loading');
       const errorEl = document.getElementById('error');
       const episodesContainer = document.getElementById('episodes');
-      const RSS_FEED_URL =
-        'https://script.google.com/macros/s/AKfycbz-bKmW0_TCyWnOjonbX8JjLkrLXop76e9mfHol-XDvwoT931GVXMW9-mzS6xMF7RIe/exec';
+      //const RSS_FEED_URL = 'https://script.google.com/macros/s/AKfycbzJM_l5m59-avur_Zlu2yhizMytRzstOuBgMF9tni1JjXEINgx6N7OsA7FTw429S7A/exec';
+      const RSS_FEED_URL = 'soundon.xml';
       const RSS_FALLBACK_URL = 'rssfeed.xml';
-      const APPLE_LOOKUP_URL =
-        'https://itunes.apple.com/lookup?id=1812447277&country=tw&media=podcast&entity=podcastEpisode&limit=300';
-
+      //const APPLE_LOOKUP_URL = 'https://script.google.com/macros/s/AKfycbzXuQi4Xs1yRfpzD4IoFQUCYuOZTKwKDbLJ5YiauAbk0L8FCcDrYCRFhuC2nkMBEFFI/exec';
+      const APPLE_LOOKUP_URL = 'apple.json';
       const normalizeGuid = (value) => (typeof value === 'string' ? value.trim().toLowerCase() : '');
 
       async function fetchRssFeed() {
