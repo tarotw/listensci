@@ -58,7 +58,7 @@ jobs:
             -o soundon.xml.tmp
 
           curl -fL --retry 5 --retry-delay 3 \
-            "https://itunes.apple.com/lookup?id=1812447277&country=tw&media=podcast&entity=podcastEpisode&limit=300" \
+            "https://script.google.com/macros/s/AKfycbzXuQi4Xs1yRfpzD4IoFQUCYuOZTKwKDbLJ5YiauAbk0L8FCcDrYCRFhuC2nkMBEFFI/exec" \
             -o apple.json.tmp
 
           # 如果新檔和舊檔不同，才覆蓋
